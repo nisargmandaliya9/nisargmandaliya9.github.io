@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nisarg's Portfolio</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Kanit:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- SplideJs Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
+    />
+    <!-- App Styles -->
+    <link rel="stylesheet" href="styles/app.css" />
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('lsVOtVP81SKXax1Zu');
+        })();
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="animate__animated animate__slideInDown">
+        <div class="container">
+          <h1 class="header__logo">
+            <a href="/"> NM </a>
+          </h1>
+          <nav class="navigation">
+            <ul>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="btn btn--main" href="assets/resume01.pdf" download>
+              <i class="bi bi-download"></i> Resume
+            </a>
+          </nav>
+          <div class="header__resume">
+            <a class="btn btn--main" href="assets/resume01.pdf" download>
+              <i class="bi bi-download"></i> Resume
+            </a>
+          </div>
+          <div class="header__mobile">
+            <button id="navigation-button">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title animate__animated animate__slideInDown">
+            FRONTEND DEVELOPER <br/>
+            WHO LOVES TO CODE
+          </h1>
+          <p class="hero__content animate__animated animate__slideInDown">
+            I'm an intermediate frontend developer. I write code in JavaScript and Reactjs. 
+          </p>
+
+          <div class="hero__img" style="background-image: url('assets/curve.png')">
+            <div class="hero__imgCircle animate__animated animate__slideInUp">
+              <img src="assets/profile.jpg" alt="Profile Picture" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section animate__animated animate__slideInUp" id="portfolio">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Portfolio</h2>
+          <p class="section__subtitle">See my latest work</p>
+        </div>
+        <div class="portfolio">
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/portfolio-01.png" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Nisarg Writes</h3>
+              <p class="portfolio__content">
+                I write poems. And So, I decided to make them public. Here's my blog site, you can read my poems there. I've created this project using Html, CSS and JavaScript. Also, I've used EmailJS to send emails.
+              </p>
+              <a class="portfolio__link" href="https://nisargwrites.netlify.app/" target="_blank">Have a look <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/portfolio-02.png" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">SocketIO Chat App</h3>
+              <p class="portfolio__content">
+                A realtime chat application using nodejs and socket.io. I have created this with harry potter theme. You can choose room of your choice and then ask anyone to join that room and chat with them.
+              </p>
+              <a class="portfolio__link" href="https://letshaveconvo.herokuapp.com/" target="_blank">Have a look <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/portfolio-04.png" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Music App - MuSick</h3>
+              <p class="portfolio__content">
+                As I'm a music lover, I created this simple music listening app. I've add a few songs, you can listen to them, there's repeat and shuffle song features. Basically I've used technologies like Html, CSS and JavaScript.
+              </p>
+              <a class="portfolio__link" href="https://nisargmandaliya9.github.io/MusicApp" target="_blank">Have a look <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="assets/portfolio-03.png" alt="Portfolio Items" />
+            </div>
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Employee Record Management System</h3>
+              <p class="portfolio__content">
+                Employee Record Management System is a system capable of doing various task such as attendance and salary management. I've created a basic version of this during my summer internship. Technologies I used are Html & CSS for frontend, PHP for backend and MySQL for database.
+              </p>
+              <a class="portfolio__link" href="https://github.com/nisargmandaliya9/ERMS" target="_blank">Github repo <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__left">
+            <div class="section__header">
+              <h2 class="section__title">About</h2>
+              <p class="section__subtitle">Few things about me</p>
+            </div>
+            <p class="about__bio">
+              Hello, there!! Myself Nisarg Mandaliya. I love to code. I'm basically interested in frontend development, I know about MERN Stack development as well. I've worked on different projects such as Music App in HTML, CSS and JavaScript, Blog app using HTML, CSS and JavaScript. Also a chat application using socket.io and nodejs<br/>
+              I love to draw, write poems and play chess in my free time. In case you want to play chess <a href="  https://www.chess.com/member/nisargmandaliya9" target="_blank">nisargMandaliya9</a>
+            </p>
+            <h4 class="about__skillsTitle">Skills</h4>
+            <ul class="about__skillsList">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Reactjs</li>
+              <li>Nodejs</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="about__right">
+            <img src="assets/avatar.png" alt="Profile Picture" v />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__left">
+            <div class="section__header">
+              <h2 class="section__title">Contact Me</h2>
+              <p class="section__subtitle">Don't hesitate to message</p>
+            </div>
+            <div class="contact__info">
+              <p>Email Me:</p>
+              <a href="mailto:">nisarg.soni951@gmail.com</a>
+            </div>
+
+            <div class="contact__info">
+              <p>Call Me:</p>
+              <a href="tel:">(+91)7984883439</a>
+            </div>
+
+            <div class="contact__info">
+              <p>Follow Me:</p>
+              <ul class="social">
+                <li>
+                  <a href="https://www.linkedin.com/in/nisarg-mandaliya-6249181b3/"><i class="bi bi-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/nisargmandaliya9"><i class="bi bi-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/nisargmandaliya"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/nisargmandaliya__"><i class="bi bi-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact__right">
+            <form class="contact__form" onsubmit="sendEmail(); reset(); return false;">
+              <div class="contact__fields">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name" placeholder="Your Name" />
+              </div>
+              <div class="contact__fields">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" />
+              </div>
+              <div class="contact__fields">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Write Message..."></textarea>
+              </div>
+              <div class="contact__fields">
+                <button class="btn btn--main" type="submit">
+                  Send Message <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+              <span class="err-message"></span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p>Made with 💜 by Nisarg Mandaliya</p>
+      </div>
+    </footer>
+
+    <!-- SplideJs v3 -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- App Scripts -->
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
